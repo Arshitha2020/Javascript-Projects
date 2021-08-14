@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Number</title>
+    <style>
+        body{
+            background-color: lightsalmon;
+        }
+            button{color: black;
+            margin: 10%;
+            border-color: whitesmoke;
+            margin-left: 43.5%;
+            padding: 14px 40px;
+            background-color: lightgrey;
+            font-size: large;
+            border-radius: 15px;
+            }
+            h1{
+                text-align: center;
+                font-size: 140px;
+
+            }
+    </style>
+
+</head>
+<body>
+    <h1 id="num"></h1>
+    <button onclick="increment()" value="0">CLick Me</button>
+</body>
+<script>
+    var i=0;
+    function increment(){
+         i++;
+        document.getElementById("num").innerHTML=i;
+    }
+</script>
+</html>
