@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS Project</title>
+    <style>
+        h1{
+            font-size: 120px;
+            text-align: center;
+            color: whitesmoke;
+        }
+     #plus{
+            margin: 10%;
+            margin-left: 39%;
+            padding:15px 30px;
+            color: rgb(148, 0, 0);
+            background-color: rgb(2, 0, 122);
+            font-size: 50px;
+            border: black;
+            border-radius: 40%;
+        }
+        #minus{
+           
+            padding:15px 35px;
+            color: rgb(148, 0, 0);
+            background-color: rgb(2, 0, 122);
+            font-size: 50px;
+            border: black;
+            border-radius: 40%;
+        }
+        body{
+            background-color: rgb(15, 16, 17);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="num"></h1>
+    <button id="plus" onclick="add()">+</button>
+    <button id="minus" onclick="sub()">-</button>
+</body>
+<script>
+    var i=0;
+    function add(){
+        i++;
+        document.getElementById("num").innerHTML=i;
+    }
+    function sub(){
+        i--;
+        document.getElementById("num").innerHTML=i;
+    }
+</script>
+</html>
